@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Get Twitter Data</h2>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new {id = "modalTwitterForm"}))
+{
+    <input class="btn pull-left" type="submit" value="Get Twitter Data" id="btnGetTwitter" />
+}
